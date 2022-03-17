@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Cafeteria</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <h1>Welcome to My Cafeteria!</h1>
+            <form action="cart.html" method="get">
+                <input type="submit" value="Cart">
+            </form>
+        </div>
+        <ul>
+            <li><label>
+                <span>Idly</span>
+                <button onclick="addToCart('Idly')">Add to cart</button>
+            </label></li>
+            <li><label>
+                <span>Dosa</span>
+                <button onclick="addToCart('Dosa')">Add to cart</button>
+            </label></li>
+            <li><label>
+                <span>Poori</span>
+                <button onclick="addToCart('Poori')">Add to cart</button>
+            </label></li>
+        </ul>
+
+        <script src="my-cafeteria.js"></script>
+    </body>
+</html>
