@@ -7,23 +7,25 @@
     </head>
     <body>
         <h1>Welcome to My Cafeteria!</h1>
-        <h2>Login In</h2>
-        <form action="my-cafeteria.html" method="get" onsubmit="login()">
-            <div>
-                <p>Full Name</p>
-                <input type="text" id="name"/>
-            </div>
-            <div>
-                <p>Email</p>
-                <input type="email" id="email"/>
-            </div>
-            <div>
-                <p>Password</p>
-                <input type="password" id="password"/>
-            </div>
-            <br/>
-            <input type="submit" value="Sign In"/>
-        </form>
+        <div id="login-container">
+            <p class="login-text">Login In</p>
+            <form action="my-cafeteria.html" method="get" onsubmit="login()" id="login-form">
+                <div>
+                    <p class="input-label">Full Name</p>
+                    <input type="text" id="name" class="input-field"/>
+                </div>
+                <div>
+                    <p class="input-label">Email</p>
+                    <input type="email" id="email" class="input-field"/>
+                </div>
+                <div>
+                    <p class="input-label">Password</p>
+                    <input type="password" id="password" class="input-field"/>
+                </div>
+                <br/>
+                <input type="submit" value="Sign In" class="submit"/>
+            </form>
+        </div>
         <script src="login.js"></script>
     </body>
 </html>

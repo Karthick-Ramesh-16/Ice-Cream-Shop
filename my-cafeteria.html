@@ -8,11 +8,41 @@
     <body>
         <div>
             <h1 id="username"></h1>
-            <form action="cart.html" method="get">
-                <input type="submit" value="Cart">
+            <form action="cart.html" method="get" class="food-items-head">
+                <p class="login-text">Choose what you want!</p>
+                <input type="submit" value="Cart" class="cart-button">
             </form>
         </div>
-        <ul id="food-items"></ul>
+        <hr/>
+        <ul id="food-items" class="food-items">
+            <li>
+                <label class="food-item">
+                    <img src="Idly.jpeg" alt="Idly" class="food-item-img"/>
+                    <div>
+                        <span>Idly ₹ 40</span>
+                        <button class="add-to-cart" onclick="addToCart('Idly')">Add to cart</button>
+                    </div>
+                </label>
+            </li>
+            <li>
+                <label class="food-item">
+                    <img src="Dosa.jpeg" alt="Dosa" class="food-item-img"/>
+                    <div>
+                        <span>Dosa ₹ 30</span>
+                        <button class="add-to-cart" onclick="addToCart('Dosa')">Add to cart</button>
+                    </div>
+                </label>
+            </li>
+            <li>
+                <label class="food-item">
+                    <img src="Poori.jpeg" alt="Poori" class="food-item-img"/>
+                    <div>
+                        <span>Poori ₹ 25</span>
+                        <button class="add-to-cart" onclick="addToCart('Poori')">Add to cart</button>
+                    </div>
+                </label>
+            </li>
+        </ul>
 
         <script src="my-cafeteria.js"></script>
     </body>

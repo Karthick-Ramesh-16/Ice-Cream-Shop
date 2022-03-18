@@ -6,14 +6,18 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div>
-            <h1>Your cart items</h1>
-            <span id="total-amount"></span>
-            <form action="greeting.html" method="get">
-                <input type="submit" value="Checkout">
-            </form>
+        <div class="food-items-head">
+            <p class="login-text">Your cart items</p>
+            <div class="cart-form">
+                <span id="total-amount"></span>
+                <button class="remove-item" onclick="clearCart()">Clear cart</button>
+                <form action="greeting.html" method="get" onsubmit="clearCart()">
+                    <input type="submit" value="Checkout" class="add-to-cart">
+                </form>
+            </div>
         </div>
-        <ul id="cart-items"></ul>
+        <hr/>
+        <ul id="cart-items" class="food-items"></ul>
 
         <script src="cart.js"></script>
     </body>
