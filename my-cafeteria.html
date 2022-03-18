@@ -7,7 +7,7 @@
     </head>
     <body>
         <div>
-            <h1>Welcome to My Cafeteria!</h1>
+            <h1 id="username"></h1>
             <form action="cart.html" method="get">
                 <input type="submit" value="Cart">
             </form>
@@ -15,14 +15,17 @@
         <ul>
             <li><label>
                 <span>Idly</span>
+                <span>₹ 40</span>
                 <button onclick="addToCart('Idly')">Add to cart</button>
             </label></li>
             <li><label>
                 <span>Dosa</span>
+                <span>₹ 30</span>
                 <button onclick="addToCart('Dosa')">Add to cart</button>
             </label></li>
             <li><label>
                 <span>Poori</span>
+                <span>₹ 20</span>
                 <button onclick="addToCart('Poori')">Add to cart</button>
             </label></li>
         </ul>
