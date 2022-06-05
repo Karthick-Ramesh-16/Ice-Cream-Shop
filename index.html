@@ -1,32 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src='//fm-staging-us-app-cdnjs.s3.amazonaws.com/crm/600137906/16201.js' chat='true'></script>
-        <title>My Cafeteria</title>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="style.css"/>
+
+        <title>Ice Cream Shop</title>
     </head>
+
     <body>
-        <h1>Welcome to My Cafeteria!</h1>
-        <div id="login-container">
-            <p class="login-text">Login In</p>
-            <form action="my-cafeteria.html" method="get" onsubmit="login()" id="login-form">
-                <div>
-                    <p class="input-label">Full Name</p>
-                    <input type="text" id="name" class="input-field"/>
+        <header>
+            <div class="content">
+                <h1>Ice Cream Shop</h1>
+                <div class="ice-cream-quote">
+                    <p>The Ice Cream Shop That Refreshes.</p>
+                    <p>Try A Different One Today.</p>
+                    <p>Eat it before it melts.</p>
+                    <p>A Taste Of Guilty Pleasure.</p>
+                    <p>Taste It. Experience It.</p>
                 </div>
-                <div>
-                    <p class="input-label">Email</p>
-                    <input type="email" id="email" class="input-field"/>
+            </div>
+        </header>
+
+        <section class="ice-cream-menu">
+            <p>ICE CREAM MENU</p>
+            <div class="ice-cream-row">
+                <div class="ice-cream-div">
+                    <img class="ice-cream" src="./images/ice-cream-1.jpeg">
                 </div>
-                <div>
-                    <p class="input-label">Password</p>
-                    <input type="password" id="password" class="input-field"/>
+                <div class="ice-cream-div">
+                    <img class="ice-cream" src="./images/ice-cream-2.jpeg">
                 </div>
-                <br/>
-                <input type="submit" value="Sign In" class="submit"/>
-            </form>
-        </div>
-        <script src="login.js"></script>
+                <div class="ice-cream-div">
+                    <img class="ice-cream" src="./images/ice-cream-3.jpeg">
+                </div>
+                <div class="ice-cream-div">
+                    <img class="ice-cream" src="./images/ice-cream-4.jpeg">
+                </div>
+                <div class="ice-cream-div">
+                    <img class="ice-cream" src="./images/ice-cream-5.jpeg">
+                </div>
+                <div class="ice-cream-div">
+                    <img class="ice-cream" src="./images/ice-cream-6.jpeg">
+                </div>
+            </div>
+        </section>
+
+        <section class="quote">
+            <blockquote class="container">
+            <p>"Ice cream is cheaper than therapy for stress."</p>
+            <cite>Satisfied Customer</cite>
+            </blockquote>
+        </section>
+
+        <footer>
+            <div class="container">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <p>&copy; All rights reserved.</p>
+            </div>
+        </footer>
     </body>
 </html>

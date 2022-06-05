@@ -1,118 +1,99 @@
-body {
+.content {
     font-family: sans-serif;
-    max-width: 1200px;
-    margin-top: 32px;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
+    height: 500px;
+    background-image: url("./images/background-image.jpeg");
 }
 
-#login-container {
-    max-width: 450px;
-    margin-left: 16px;
+.content h1 {
+    color: #c71e38;
+    font-size: 4.375rem;
+    font-weight: 700;
+    margin: 0px;
+    padding: 32px 0px 0px 32px;
 }
 
-#login-form {
-    padding: 0% 6px;
-    margin-left: 12px;
+.ice-cream-quote {
+    color: pink;
+    font-size: 2rem;
+    padding-left: 64px;
 }
 
-.login-text {
-    font-size: 1.875rem;
-    margin-bottom: 2.5rem;
-}
-
-.submit, .add-to-cart, .remove-item {
-    color: white;
-    font-size: 1.25rem;
-    padding: 6px 10px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
-
-button:hover, .cart-button:hover, .add-to-cart:hover, .submit:hover {
-    cursor: pointer;
-}
-
-.submit {
-    width: 95%;
-    background-color: purple;
-}
-
-.cart-button {
-    color: white;
+.ice-cream-menu p {
     font-size: 1.5rem;
-    padding: 10px 20px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    background-color: rgb(228, 187, 8);
+    letter-spacing: 2px;
 }
 
-.add-to-cart {
-    background-color: rgb(14, 148, 14);
+.ice-cream-row {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 20px;
 }
 
-.remove-item {
-    background-color: rgb(218, 13, 23);
+.ice-cream {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
-.input-label {
-    color: #555;
-    margin-bottom: 0.5rem;
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 900px;
 }
 
-.input-field {
-    width: 90%;
-    font-size: 1.25rem;
-    padding: 0.5rem;
+.quote {
+    margin-top: 1rem;
+    text-align: center;
+    padding: 32px 0;
+    background: #fc4273;
+    color: white;
 }
 
-.food-item, .food-item div {
-    display: flex;
-    justify-content: space-between;
-}
-
-.food-item div {
-    width: 88%;
-    align-items: center;
-}
-
-.food-items {
-    list-style-type: none;
-}
-
-ul {
+blockquote {
+    margin: 0;
     padding: 0;
+    text-align: center;
 }
 
-li {
-    padding: 10px;
+blockquote p {
+    margin: 0 0 5px 0;
+    font-size: 1.5rem;
 }
 
-.food-item {
-    padding: 12px;
-    background-color: #eee;
-    border: 1px solid #111;
+blockquote cite {
+    font-size: 1rem;
+    font-style: italic;
 }
 
-.food-item span, #total-amount {
-    font-size: 1.25rem;
+blockquote cite:before {
+    content: "–";
+    margin-right: 5px;
 }
 
-.food-item-img {
-    width: 100px;
-    height: 100px;
+footer {
+    background: #353535;
+    padding: 32px 0;
+    text-align: center;
+    color: #868686;
 }
 
-.food-items-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.cart-form {
-    width: 25%;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
+footer li {
+    display: inline-block;
+}
+
+footer li a {
+    padding: 6px;
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: #c3c3c3;
+}
+
+footer li a:hover {
+    color: white;
 }
