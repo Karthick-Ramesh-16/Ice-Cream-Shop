@@ -1,34 +1,71 @@
-<html>
-	<head>
-		<title>
-		Dinamically add radio button
-		</title>
-		<script language="Javascript">
-		function add(type) {
-        var element = document.createElement("input");
-        element.setAttribute("type", type);
-        element.setAttribute("value", type);
-        element.setAttribute("name", type);
-        var foo = document.getElementById("fooBar");
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        //Append the element in page (in span).
-        foo.appendChild(element);
-      }
-		</script>
-        <script
-src='//fm-staging-us-app-cdnjs.s3.amazonaws.com/crm/6698826/5838487.js'
-chat='true'>
-</script>
-	</head>
-	<body>
-	<form>
-		<h2>Dinamically and radio button in form</h2>
-		<br/>
-		<select name="element">
-			<option value="radio">Radio</option>
-		</select>
-		<input type="button" value="add" onclick="add(document.forms[0].element.value)"/>
-		<span id="fooBar">&nbsp;</span>
-	</form>
-	</body>
+        <link rel="stylesheet" href="style.css"/>
+
+        <title>Ice Cream Shop</title>
+
+        <script src='//fm-staging-us-app-cdnjs.s3.amazonaws.com/crm/6698826/5838487.js' chat='true'></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="content">
+                <h1>Ice Cream Shop</h1>
+                <div class="ice-cream-quote">
+                    <p>The Ice Cream Shop That Refreshes.</p>
+                    <p>Try A Different One Today.</p>
+                    <p>Eat it before it melts.</p>
+                    <p>A Taste Of Guilty Pleasure.</p>
+                    <p>Taste It. Experience It.</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="ice-cream-menu">
+            <p>ICE CREAM MENU</p>
+            <div class="ice-cream-row">
+                <div class="ice-cream-div">
+                    <img class="ice-cream" src="./images/ice-cream-1.jpeg">
+                </div>
+                <div class="ice-cream-div">
+                    <img class="ice-cream" src="./images/ice-cream-2.jpeg">
+                </div>
+                <div class="ice-cream-div">
+                    <img class="ice-cream" src="./images/ice-cream-3.jpeg">
+                </div>
+                <div class="ice-cream-div">
+                    <img class="ice-cream" src="./images/ice-cream-4.jpeg">
+                </div>
+                <div class="ice-cream-div">
+                    <img class="ice-cream" src="./images/ice-cream-5.jpeg">
+                </div>
+                <div class="ice-cream-div">
+                    <img class="ice-cream" src="./images/ice-cream-6.jpeg">
+                </div>
+            </div>
+        </section>
+
+        <section class="quote">
+            <blockquote class="container">
+            <p>"Ice cream is cheaper than therapy for stress."</p>
+            <cite>Satisfied Customer</cite>
+            </blockquote>
+        </section>
+
+        <footer>
+            <div class="container">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <p>&copy; All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
 </html>
